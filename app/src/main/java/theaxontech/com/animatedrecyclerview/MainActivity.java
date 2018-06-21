@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
 
     private List<Superhero> superheroList = new ArrayList<>();
     private SuperherosAdapter mAdapter;
-    private FloatingActionButton floatingActionFromBottomAnimButton, floatingActionFallDownAnimButton, floatingActionSlideRightAnimButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
 
         prepareMovieData();
 
-        floatingActionFromBottomAnimButton = findViewById(R.id.menu_item1);
-        floatingActionFallDownAnimButton = findViewById(R.id.menu_item2);
-        floatingActionSlideRightAnimButton = findViewById(R.id.menu_item3);
+        FloatingActionButton floatingActionFromBottomAnimButton = findViewById(R.id.menu_item1);
+        FloatingActionButton floatingActionFallDownAnimButton = findViewById(R.id.menu_item2);
+        FloatingActionButton floatingActionSlideRightAnimButton = findViewById(R.id.menu_item3);
 
         floatingActionFromBottomAnimButton.setOnClickListener(new View.OnClickListener() {
             @Override
